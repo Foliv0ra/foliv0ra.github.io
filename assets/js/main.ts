@@ -55,7 +55,7 @@ class Calender {
                 document.body.classList.add('noscroll');
                 this.giftWrap.innerHTML = giftSring;
 
-                if(this.gifts[i].videoUrl) {
+                if(this.gifts[i].videoId) {
                     this.giftWrap.innerHTML += '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + this.gifts[i].videoId +'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
                 }
 
