@@ -1,4 +1,4 @@
-Elenas personal advent calender
+A personal advent calender
 
 TODO: 
 Style the Popup,
