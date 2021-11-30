@@ -1,0 +1,16 @@
+{
+    "gifts": [
+        {
+            "id": 1,
+            "text": "",
+            "fontSize": 4,
+            "imageUrl": "images/1.jpg"
+        },
+        {
+            "id": 30,
+            "text": "Jedem zeigt er ein anderes Gesicht. Selber hat er keins. Weißt du, wer das ist ?",
+            "fontSize": 3.5,
+            "imageUrl": "images/30.jpg"
+        }
+    ]
+}
