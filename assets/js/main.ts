@@ -21,7 +21,7 @@ class Calender {
     fetchJson() {
         let host = window.location.host;
         console.log(host);
-        fetch('gift.json').then(function (response) {
+        fetch('https://foliv0ra.github.io/gift.json').then(function (response) {
             return response.json();
         }).then(data => {
             this.gifts = data.gifts;
@@ -55,9 +55,12 @@ class Calender {
                 document.body.classList.add('noscroll');
                 this.giftWrap.innerHTML = giftSring;
 
+                console.log('check video id');
+                console.log(this.gifts[i].videoId);
+
                 if(this.gifts[i].videoId != '') {
                     console.log('got video');
-                    this.giftWrap.innerHTML += '<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + this.gifts[i].videoId +'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>'
+                    this.giftWrap.innerHTML = '<div id="giftbox" style="font-size: ' + this.gifts[i].fontSize + 'em;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + this.gifts[i].videoId +'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>'
                 }
 
             }

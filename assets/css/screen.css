@@ -249,6 +249,12 @@ body.noscroll {
 }
 
 
+#giftbox iframe {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
 /* The animation code */
 @keyframes rotate {
     from {
