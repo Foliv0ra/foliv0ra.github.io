@@ -52,6 +52,7 @@ var Calender = /** @class */ (function () {
                 console.log('check video id');
                 console.log(this.gifts[i].videoId);
                 if (this.gifts[i].videoId != '') {
+                    this.giftWrap.classList.add('video');
                     console.log('got video');
                     this.giftWrap.innerHTML = '<div id="giftbox" style="font-size: ' + this.gifts[i].fontSize + 'em;"><iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/' + this.gifts[i].videoId + '" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>';
                 }
