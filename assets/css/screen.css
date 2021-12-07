@@ -3,8 +3,8 @@
 *,
 *::before,
 *::after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 header,
@@ -16,309 +16,319 @@ footer,
 div,
 img,
 a {
-    display: block;
+  display: block;
 }
 
 html,
 body {
-    height: 100%;
+  height: 100%;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    -webkit-text-size-adjust: none;
-    color: #fff;
-    background-color: #fff;
-    font: normal 1em/1.25 "Parisienne", Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  -webkit-text-size-adjust: none;
+  color: #fff;
+  background-color: #fff;
+  font: normal 1em/1.25 'Parisienne', Helvetica, sans-serif;
 }
 
-
-
 #outer {
-    min-height: 100vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  overflow: hidden;
 }
 
 #calender {
-    width: 100%;
-    min-height: 100vh;
-    margin: 0 auto;
-    padding: 3em;
-    position: relative;
-    z-index: 5;
-    background-color: #fff;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 3em;
+  position: relative;
+  z-index: 5;
+  background-color: #fff;
 }
 
 #calender::before {
-    display: block;
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 100%;
-    width: 100%;
-    background: transparent url(../img/bg4.jpg) bottom center;
-    background-size: cover;
-    opacity: 1;
-    z-index: 4;
+  display: block;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background: transparent url(../img/bg4.jpg) bottom center;
+  background-size: cover;
+  opacity: 1;
+  z-index: 4;
 }
-
 
 /*  Title */
 
 #title {
-    position: relative;
+  position: relative;
 }
 
 h1 {
-    text-align: center;
-    font-size: 3em;
-    z-index: 5;
-    position: relative;
-    color: #fff;
+  text-align: center;
+  font-size: 3em;
+  z-index: 5;
+  position: relative;
+  color: #fff;
 }
 
 #heart {
-    position: absolute;
-    height: 100px;
-    width: 100px;
-    right: 0;
-    top: -18px;
-    z-index: 100;
-    animation: heartbeat 3s 0s infinite;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  right: 0;
+  top: -18px;
+  z-index: 100;
+  animation: heartbeat 3s 0s infinite;
 }
 
 #heart svg {
-    width: 100%;
-    height: 100%;
-    opacity: 0.4;
-    transition: opacity 300ms linear;
+  width: 100%;
+  height: 100%;
+  opacity: 0.4;
+  transition: opacity 300ms linear;
 }
 
 #heart svg:hover {
-    cursor: pointer;
-    opacity: 1;
+  cursor: pointer;
+  opacity: 1;
 }
 
 #hearttext {
-    position: fixed;
-    visibility: hidden;
-    opacity: 0;
-    transition: opacity 300ms linear;
-    z-index: 2000;
-    background-color: #fff;
-    color: #000;
-    padding: 2rem;
-    font-size: 5rem;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    text-align: center;
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 300ms linear;
+  z-index: 2000;
+  background-color: #fff;
+  color: #000;
+  padding: 2rem;
+  font-size: 5rem;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
 }
 
 #hearttext.show {
-    opacity: 1;
-    visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
 
 #closeheart {
-    font-family: arial, verdana;
-    color: red;
-    cursor: pointer;
+  font-family: arial, verdana;
+  color: red;
+  cursor: pointer;
 }
 
 /* Doors */
 
 .door-wrap {
-    z-index: 1000;
-    max-width: 1200px;
-    margin: 0 auto;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+  z-index: 1000;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .door {
-    border: 1px dashed #888;
-    height: 150px;
-    width: 150px;
-    margin-bottom: 1em;
-    margin-right: 1em;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.85em;
-    transition: box-shadow 300ms linear, border-color 200ms linear;
+  border: 1px dashed #888;
+  height: 150px;
+  width: 150px;
+  margin-bottom: 1em;
+  margin-right: 1em;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.85em;
+  transition: box-shadow 300ms linear, border-color 200ms linear;
 }
 
 .door:hover,
 .door.open {
-    cursor: pointer;
-    border-color: gold;
-    box-shadow: 0 0 7px gold;
+  cursor: pointer;
+  border-color: gold;
+  box-shadow: 0 0 7px gold;
 }
 
 .door.nope {
-    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-    border-color: rgb(179, 20, 20);
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  border-color: rgb(179, 20, 20);
 }
 
 .door.nope:hover {
-    box-shadow: none;
-    border-color: rgb(179, 20, 20);
+  box-shadow: none;
+  border-color: rgb(179, 20, 20);
 }
 
 .door.open::after {
-    content: '';
-    background: transparent url('../img/glow.svg') no-repeat center center;
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    animation: rotate 5s linear 0s infinite;
+  content: '';
+  background: transparent url('../img/glow.svg') no-repeat center center;
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  animation: rotate 5s linear 0s infinite;
 }
 
 .door.open.opened {
-    background-color: rgba(255, 194, 14, 0.2);
+  background-color: rgba(255, 194, 14, 0.2);
 }
 
 .door.open.opened::after {
-    background: none;
+  background: none;
 }
 
 .door#door24 {
-    width: 350px;
+  width: 350px;
 }
-
 
 /* Gift */
 
 #outer.noscroll,
 body.noscroll {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 #giftWrap {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    height: 100%;
-    background-color: transparent;
-    transition: background-color 200ms linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  height: 100%;
+  background-color: transparent;
+  transition: background-color 200ms linear;
 }
 
 #giftWrap.active {
-    background-color: rgb(4 33 56 / 85%);
-    z-index: 5000;
+  background-color: rgb(4 33 56 / 85%);
+  z-index: 5000;
 }
 
 #giftbox {
-    border: 3px dotted rgb(255, 255, 255);
-    max-width: 800px;
-    min-height: 500px;
-    width: 90%;
-    background-color: #ca1e1e;
-    padding: 6rem;
-    position: relative;
-    color: #fff;
-    text-align: center;
-    cursor: default;
+  border: 3px dotted rgb(255, 255, 255);
+  max-width: 800px;
+  min-height: 500px;
+  width: 90%;
+  background-color: #ca1e1e;
+  padding: 6rem;
+  position: relative;
+  color: #fff;
+  text-align: center;
+  cursor: default;
 }
 
 #giftbox:before {
-    content: '';
-    position: absolute;
-    background: transparent url(../img/bow.png) no-repeat left top;
-    width: 250px;
-    height: 200px;
-    left: -109px;
-    transform: rotate(-20deg);
-    top: -74px;
-    background-size: 100% auto;
+  content: '';
+  position: absolute;
+  background: transparent url(../img/bow.png) no-repeat left top;
+  width: 250px;
+  height: 200px;
+  left: -109px;
+  transform: rotate(-20deg);
+  top: -74px;
+  background-size: 100% auto;
 }
 
-
 #giftbox iframe {
-    width: 100%;
-    height: 500px;
-    display: block;
+  width: 100%;
+  height: 500px;
+  display: block;
 }
 
 #giftWrap.video #giftbox {
-    padding: 0;
+  padding: 0;
 }
 
 /* The animation code */
 @keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
 
-    to {
-        transform: rotate(340deg);
-    }
+  to {
+    transform: rotate(340deg);
+  }
 }
 
 @keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
 
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
 
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
 
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
-
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
-    }
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }
 
 @keyframes heartbeat {
-    0% {
-        transform: scale(.75);
-    }
+  0% {
+    transform: scale(0.75);
+  }
 
-    10% {
-        transform: scale(1);
-    }
+  10% {
+    transform: scale(1);
+  }
 
-    20% {
-        transform: scale(.75);
-    }
+  20% {
+    transform: scale(0.75);
+  }
 
-    30% {
-        transform: scale(1);
-    }
+  30% {
+    transform: scale(1);
+  }
 
-    40% {
-        transform: scale(.75);
-    }
+  40% {
+    transform: scale(0.75);
+  }
 
-    50% {
-        transform: scale(1);
-    }
+  50% {
+    transform: scale(1);
+  }
+}
 
+@media screen and (max-width: 480px) {
+  #calender {
+    padding: 0;
+  }
+
+  #hearttext {
+    font-size: 2rem;
+  }
+
+  .door {
+      width: 100px;
+      height: 100px;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+  }
 }
