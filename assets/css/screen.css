@@ -188,6 +188,7 @@ h1 {
 
 .door.open.opened::after {
   background: none;
+  display: none;
 }
 
 .door#door24 {
