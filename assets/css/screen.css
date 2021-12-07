@@ -326,9 +326,17 @@ body.noscroll {
   }
 
   .door {
-      width: 100px;
-      height: 100px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 0.5rem;
     margin-right: 0.5rem;
+  }
+
+  #giftbox iframe {
+    height: auto;
+  }
+
+  #giftbox {
+    min-height: 0;
   }
 }
